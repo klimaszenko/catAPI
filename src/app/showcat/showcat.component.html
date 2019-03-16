@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+      <div class="col-12 text-center py-5 mt-5">
+          <h4 class="mb-0">Random cat API</h4>
+          <p>Click on cat image to switch into new one</p>
+          <small>Powered by Angular & <a href="http://thecatapi.com" targe="_blank">theCatAPI</a> / coded by <a href="http://tomaszklimas.pl" target="_blank">tomaszklimas.pl</a></small>
+        </div>
+      <div class="col-md-6 offset-md-3 d-flex align-items-center justify-content-center">
+        <img src="{{ApiService.link}}" (click)="refreshCat()" class="img-fluid">
+      </div>
+  </div>
+</div>

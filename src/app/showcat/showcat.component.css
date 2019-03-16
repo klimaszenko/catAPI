@@ -1,0 +1,10 @@
+img{
+    cursor:pointer;
+    box-shadow: 0 0 3px #515151;
+    transition: box-shadow .3s;
+}
+
+img:hover{
+    box-shadow: 0 0 20px #515151;
+
+}
