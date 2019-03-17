@@ -1,12 +1,29 @@
 <div class="container">
   <div class="row">
-      <div class="col-12 text-center py-5 mt-5">
+      <div class="col-12 text-center py-2 mt-5">
+          <img src="../../assets/cat-box.png" class="img-fluid top pb-2">
           <h4 class="mb-0">Random cat API</h4>
           <p>Click on cat image to switch into new one</p>
-          <small>Powered by Angular & <a href="http://thecatapi.com" targe="_blank">theCatAPI</a> / coded by <a href="http://tomaszklimas.pl" target="_blank">tomaszklimas.pl</a></small>
+          <div class="my-2">
+            <input type="checkbox"  
+            [(ngModel)]="gifsAreSelected"
+            (change)="changeGifSelection(gifsAreSelected)" > Show only gifs
+            <input type="checkbox"  
+            [(ngModel)]="showURL" > Show link
+          </div>
         </div>
       <div class="col-md-6 offset-md-3 d-flex align-items-center justify-content-center">
-        <img src="{{ApiService.link}}" (click)="refreshCat()" class="img-fluid">
+        <img src="{{ApiService.link}}" (click)="refreshCat()" class="img-fluid cat">
       </div>
   </div>
+  <div class="row" *ngIf="showURL">    
+    <div class="col-12 text-center pt-4">
+        <input type="text" class="w-50" value="{{ApiService.link}}">
+    </div>
+  </div>
+  <div class="row">    
+      <div class="col-12 text-center pt-4">
+          <small>Powered by Angular & <a href="http://thecatapi.com" targe="_blank">theCatAPI</a> / coded by <a href="http://tomaszklimas.pl" target="_blank">tomaszklimas.pl</a></small>
+      </div>
+    </div>
 </div>

@@ -9,13 +9,22 @@ import {ApiService} from '../api.service';
 export class ShowcatComponent implements OnInit {
 
   constructor(public ApiService: ApiService) { }
+  gifsAreSelected:boolean;
+  showURL:boolean;
 
   ngOnInit() {
     this.ApiService.getData();
+    this.gifsAreSelected = true;
+    this.showURL=true;
   }
 
   refreshCat(){
     this.ApiService.getData();
+  }
+
+  changeGifSelection(gifsAreSelected){
+    console.log(gifsAreSelected);
+    this.ApiService.setAPIurl(gifsAreSelected);
   }
 
 }

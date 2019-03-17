@@ -1,10 +1,14 @@
-img{
+img.cat{
     cursor:pointer;
     box-shadow: 0 0 3px #515151;
     transition: box-shadow .3s;
 }
 
-img:hover{
+img.cat:hover{
     box-shadow: 0 0 20px #515151;
 
+}
+
+img.top{
+    width:80px;
 }
