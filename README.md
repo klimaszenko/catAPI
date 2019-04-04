@@ -1,27 +1,23 @@
-# Catapi
+#:cat2: CatAPI 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4. It uses Bootstrap 4 framework for frontend grid and elements. 
 
-## Development server
+## Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+CatAPI is single page application, fetching the data from [theCatAPI.com](https://theCatAPI.com/). It displays random pictures of cats on demand. 
 
-## Code scaffolding
+## Live preview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The application can be live-previewed thanks for StackBlitz kindness. 
 
-## Build
+[:arrow_forward: Check the live version of CatAPI](https://stackblitz.com/github/klimaszenko/catApi)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Features
 
-## Running unit tests
+User can decide if he wants to see all kinds of graphic images, or filter them out and watch only GIF images. Optional direct link to picture is displayed below the image.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## TO-DO
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- [ ] update the layout
+- [ ] toggle checkboxes when user clicks on text label
+- [ ] add routing and allow displaying more content fetched from [theCatAPI.com](http://thecatAPI.com)
