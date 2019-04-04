@@ -1,4 +1,4 @@
-#:cat2: CatAPI 
+# :cat2: CatAPI 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4. It uses Bootstrap 4 framework for frontend grid and elements. 
 
