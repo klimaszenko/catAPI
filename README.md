@@ -21,3 +21,5 @@ User can decide if he wants to see all kinds of graphic images, or filter them o
 - [ ] update the layout
 - [ ] toggle checkboxes when user clicks on text label
 - [ ] add routing and allow displaying more content fetched from [theCatAPI.com](http://thecatAPI.com)
+
+xxx
